@@ -6,8 +6,10 @@ let killedByHittingItself;
 let snakeBodyDisappear;
 
 
+
 let appleImage;
 let bodyImage;
+
 
 let apple = {
     x: 0,
@@ -132,6 +134,14 @@ function gameOver() {
 
 function locateApple() {
     // You have to write code here to place the apple in different position in the canvas
+    if(inGame){
+        
+            apple.x = Math.floor((Math.random() *29) + 1);
+            apple.y = Math.floor((Math.random() * 29) + 1);
+            scoreSpan+=1;
+    
+
+    }
    
 
    
